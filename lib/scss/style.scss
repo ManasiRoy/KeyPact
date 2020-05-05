@@ -3,6 +3,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: $color1;
 }
 
 img {
@@ -133,9 +134,9 @@ p {
 
     .type {
       margin-bottom: 20px;
-
       .custom-control {
         @extend .display-inline-block;
+        margin-left: 10px;
       }
 
       .form-check-label {
@@ -268,7 +269,7 @@ p {
       background-repeat: no-repeat;
       background-position: right;
       z-index: 9;
-      width: 60px;
+      width: 75px;
       height: 30px;
       padding-left: 5px;
       -webkit-appearance: none;
@@ -398,6 +399,26 @@ p {
       color: $color1;
     }
   }
+  /* Let's get this party started */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    @include radius(10px);
+    background: $color1;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: $color1;
+  }
 }
 
 #dLabel {
@@ -491,6 +512,9 @@ p {
     &.eleven {
       background-position: -62px -42px;
     }
+    &.twelve {
+      background-position: -86px -42px;
+    }
   }
 }
 
@@ -560,5 +584,83 @@ p {
     }
   }
 }
+.keypactInnroutr {
+  padding: 3% 5% 0;
+  h2 {
+    color: $color1;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    span {
+      display: block;
+      font-size: 24px;
+      color: $black;
+      font-weight: 600;
+    }
+  }
+  .keypactInnr {
+    border: 4px solid $black;
+    padding: 30px;
+    background: $white;
+    .form-control {
+      font-size: 15px;
+      font-weight: 400;
+      border-color: $color1;
+      border-radius: 0;
+      padding: 10px 15px;
+    }
+    .custom-control {
+      padding-left: 15px;
+      .chkboxoutr {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid $color1;
+        position: relative;
+        label {
+          color: $color1;
+          font-size: 30px;
+          font-weight: 600;
+          width: 100%;
 
+          &:before,
+          &:after {
+            left: 10px;
+            top: 10px;
+          }
+        }
+      }
+    }
+    .bgcolorblue {
+      background: $color1;
+      &.chkboxoutr {
+        label {
+          color: $white;
+
+          &:after {
+            border: 1px solid $white;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      color: $color1;
+    }
+    .btn {
+      font-size: 14px;
+      padding: 6px 15px;
+    }
+  }
+}
+.copyright {
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+}
 @import "./components/responsive";

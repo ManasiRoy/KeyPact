@@ -1,5 +1,6 @@
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  color: #01153e; }
 
 img {
   max-width: 100%; }
@@ -103,6 +104,8 @@ p {
   box-shadow: none; }
 .left-key .download-left .type {
   margin-bottom: 20px; }
+  .left-key .download-left .type .custom-control {
+    margin-left: 10px; }
   .left-key .download-left .type .form-check-label {
     font-size: 14px;
     font-weight: 400; }
@@ -198,7 +201,7 @@ p {
       background-repeat: no-repeat;
       background-position: right;
       z-index: 9;
-      width: 60px;
+      width: 75px;
       height: 30px;
       padding-left: 5px;
       -webkit-appearance: none; }
@@ -280,7 +283,10 @@ p {
   overflow-y: auto;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out; }
+  -ms-transition: all 0.5s ease-out;
+  /* Let's get this party started */
+  /* Track */
+  /* Handle */ }
   .inner-container .inner-text {
     padding: 0 8%; }
     .inner-container .inner-text h2 {
@@ -296,6 +302,18 @@ p {
       font-weight: 400;
       margin-bottom: 40px;
       color: #01153e; }
+  .inner-container::-webkit-scrollbar {
+    width: 10px; }
+  .inner-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+  .inner-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    background: #01153e;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+  .inner-container::-webkit-scrollbar-thumb:window-inactive {
+    background: #01153e; }
 
 #dLabel {
   width: 120px;
@@ -360,6 +378,8 @@ p {
       background-position: -33px -42px; }
     .flagoutr .flag.eleven {
       background-position: -62px -42px; }
+    .flagoutr .flag.twelve {
+      background-position: -86px -42px; }
 
 .dropdown {
   margin-top: 20px;
@@ -407,3 +427,64 @@ p {
       color: #01153e; }
     .social li:last-child {
       border-bottom: none; }
+
+.keypactInnroutr {
+  padding: 3% 5% 0; }
+  .keypactInnroutr h2 {
+    color: #01153e;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 40px; }
+    .keypactInnroutr h2 span {
+      display: block;
+      font-size: 24px;
+      color: #000000;
+      font-weight: 600; }
+  .keypactInnroutr .keypactInnr {
+    border: 4px solid #000000;
+    padding: 30px;
+    background: #fff; }
+    .keypactInnroutr .keypactInnr .form-control {
+      font-size: 15px;
+      font-weight: 400;
+      border-color: #01153e;
+      border-radius: 0;
+      padding: 10px 15px; }
+    .keypactInnroutr .keypactInnr .custom-control {
+      padding-left: 15px; }
+      .keypactInnroutr .keypactInnr .custom-control .chkboxoutr {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #01153e;
+        position: relative; }
+        .keypactInnroutr .keypactInnr .custom-control .chkboxoutr label {
+          color: #01153e;
+          font-size: 30px;
+          font-weight: 600;
+          width: 100%; }
+          .keypactInnroutr .keypactInnr .custom-control .chkboxoutr label:before, .keypactInnroutr .keypactInnr .custom-control .chkboxoutr label:after {
+            left: 10px;
+            top: 10px; }
+    .keypactInnroutr .keypactInnr .bgcolorblue {
+      background: #01153e; }
+      .keypactInnroutr .keypactInnr .bgcolorblue.chkboxoutr label {
+        color: #fff; }
+        .keypactInnroutr .keypactInnr .bgcolorblue.chkboxoutr label:after {
+          border: 1px solid #fff; }
+    .keypactInnroutr .keypactInnr p {
+      font-size: 15px;
+      font-weight: 400;
+      color: #01153e; }
+    .keypactInnroutr .keypactInnr .btn {
+      font-size: 14px;
+      padding: 6px 15px; }
+
+.copyright {
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 14px; }
