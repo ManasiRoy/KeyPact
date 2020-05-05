@@ -273,6 +273,9 @@ p {
       height: 30px;
       padding-left: 5px;
       -webkit-appearance: none;
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -290,6 +293,11 @@ p {
 
   .navbar-toggler {
     padding: 20px 20px 0 0;
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
   }
 
   .mainmenu {
@@ -662,5 +670,9 @@ p {
   margin: auto;
   text-align: center;
   font-size: 14px;
+}
+.dropdown-select:focus {
+  box-shadow: none;
+  outline: none;
 }
 @import "./components/responsive";

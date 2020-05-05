@@ -205,6 +205,8 @@ p {
       height: 30px;
       padding-left: 5px;
       -webkit-appearance: none; }
+      .right-form .choose-file select:focus {
+        outline: none; }
   .right-form .btn {
     margin-bottom: 15px; }
 
@@ -214,6 +216,10 @@ p {
     padding: 20px 20px 0; }
   .hdr-main .navbar-toggler {
     padding: 20px 20px 0 0; }
+    .hdr-main .navbar-toggler:focus {
+      border: none;
+      box-shadow: none;
+      outline: none; }
   .hdr-main .mainmenu {
     padding: 10px 15px;
     background: #01153e;
@@ -488,3 +494,7 @@ p {
   margin: auto;
   text-align: center;
   font-size: 14px; }
+
+.dropdown-select:focus {
+  box-shadow: none;
+  outline: none; }
