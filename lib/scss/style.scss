@@ -134,6 +134,7 @@ p {
 
     .type {
       margin-bottom: 20px;
+
       .custom-control {
         @extend .display-inline-block;
         margin-left: 10px;
@@ -167,9 +168,11 @@ p {
     background-color: rgba($color: #fff, $alpha: 0.5);
   }
 }
+
 .main {
   margin-top: 5%;
 }
+
 .form-control {
   @include radius(4px);
   font-size: 15px;
@@ -208,15 +211,15 @@ p {
   border: 1px solid $color1;
 }
 
-.custom-control-input:focus ~ .custom-control-label::before {
+.custom-control-input:focus~.custom-control-label::before {
   box-shadow: none;
 }
 
-.custom-control-input:active ~ .custom-control-label::before {
+.custom-control-input:active~.custom-control-label::before {
   background-color: transparent;
 }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
   background-color: $color1;
 }
 
@@ -273,6 +276,7 @@ p {
       height: 30px;
       padding-left: 5px;
       -webkit-appearance: none;
+
       &:focus {
         outline: none;
       }
@@ -293,6 +297,7 @@ p {
 
   .navbar-toggler {
     padding: 20px 20px 0 0;
+
     &:focus {
       border: none;
       box-shadow: none;
@@ -382,7 +387,7 @@ p {
   width: 92%;
   z-index: 99;
   height: 90vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   @include transition(all 0.5s ease-out);
 
   .inner-text {
@@ -407,6 +412,7 @@ p {
       color: $color1;
     }
   }
+
   /* Let's get this party started */
   &::-webkit-scrollbar {
     width: 10px;
@@ -426,6 +432,73 @@ p {
 
   &::-webkit-scrollbar-thumb:window-inactive {
     background: $color1;
+  }
+
+  .accordion {
+    .card {
+      border: none;
+
+      .card-header {
+        background: $color1;
+        padding: 0;
+        @include radius(5px);
+        margin-bottom: 20px;
+
+        .btn {
+          font-size: 18px;
+          color: $white;
+          font-weight: 600;
+          display: block;
+          width: 100%;
+          padding: 0.75rem 1.25rem;
+          text-align: left;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+
+          position: relative;
+
+          &:before {
+            content: "\f068";
+            font-family: "Font Awesome 5 Free";
+            right: 15px;
+            top: 50%;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            line-height: 1.2;
+            @include transform(translateY(-50%));
+          }
+
+          &.collapsed {
+            &:before {
+              content: "\f067";
+              font-family: "Font Awesome 5 Free";
+              right: 15px;
+              top: 50%;
+              bottom: 0;
+              margin: auto;
+              position: absolute;
+              line-height: 1.2;
+              @include transform(translateY(-50%));
+            }
+          }
+        }
+      }
+
+      .collapse {
+        border: 1px solid $color1;
+        @include radius(5px);
+        margin-bottom: 20px;
+
+        .card-body {
+          font-size: 16px;
+          color: $black;
+        }
+      }
+    }
   }
 }
 
@@ -520,6 +593,7 @@ p {
     &.eleven {
       background-position: -62px -42px;
     }
+
     &.twelve {
       background-position: -86px -42px;
     }
@@ -592,13 +666,16 @@ p {
     }
   }
 }
+
 .keypactInnroutr {
   padding: 3% 5% 0;
+
   h2 {
     color: $color1;
     font-size: 60px;
     font-weight: 800;
     margin-bottom: 40px;
+
     span {
       display: block;
       font-size: 24px;
@@ -606,10 +683,12 @@ p {
       font-weight: 600;
     }
   }
+
   .keypactInnr {
     border: 4px solid $black;
     padding: 30px;
     background: $white;
+
     .form-control {
       font-size: 15px;
       font-weight: 400;
@@ -617,13 +696,16 @@ p {
       border-radius: 0;
       padding: 10px 15px;
     }
+
     .custom-control {
       padding-left: 15px;
+
       .chkboxoutr {
         padding: 15px;
         text-align: center;
         border: 1px solid $color1;
         position: relative;
+
         label {
           color: $color1;
           font-size: 30px;
@@ -638,8 +720,10 @@ p {
         }
       }
     }
+
     .bgcolorblue {
       background: $color1;
+
       &.chkboxoutr {
         label {
           color: $white;
@@ -650,17 +734,20 @@ p {
         }
       }
     }
+
     p {
       font-size: 15px;
       font-weight: 400;
       color: $color1;
     }
+
     .btn {
       font-size: 14px;
       padding: 6px 15px;
     }
   }
 }
+
 .copyright {
   width: 100%;
   position: fixed;
@@ -671,8 +758,10 @@ p {
   text-align: center;
   font-size: 14px;
 }
+
 .dropdown-select:focus {
   box-shadow: none;
   outline: none;
 }
+
 @import "./components/responsive";
