@@ -9,7 +9,7 @@ body,
 html {
   height: 100%; }
 
-.display-inline-block, .left-key .download-left .type .custom-control, .left-key .download-left .type span, .flagoutr .flag {
+.display-inline-block, .left-key .download-left .type .custom-control, .left-key .download-left .type span, .flagoutr .flag, .contact-details em, .contact-details a {
   display: inline-block;
   vertical-align: middle; }
 
@@ -527,12 +527,6 @@ p {
           .keypactInnroutr .keypactInnr .custom-control .chkboxoutr label:before, .keypactInnroutr .keypactInnr .custom-control .chkboxoutr label:after {
             left: 10px;
             top: 10px; }
-    .keypactInnroutr .keypactInnr .bgcolorblue {
-      background: #01153e; }
-      .keypactInnroutr .keypactInnr .bgcolorblue.chkboxoutr label {
-        color: #fff; }
-        .keypactInnroutr .keypactInnr .bgcolorblue.chkboxoutr label:after {
-          border: 1px solid #fff; }
     .keypactInnroutr .keypactInnr p {
       font-size: 15px;
       font-weight: 400;
@@ -540,6 +534,13 @@ p {
     .keypactInnroutr .keypactInnr .btn {
       font-size: 14px;
       padding: 6px 15px; }
+
+.bgcolorblue {
+  background: #01153e; }
+  .bgcolorblue.chkboxoutr label {
+    color: #fff !important; }
+    .bgcolorblue.chkboxoutr label:after {
+      border: 1px solid #fff; }
 
 .copyright {
   width: 100%;
@@ -554,3 +555,18 @@ p {
 .dropdown-select:focus {
   box-shadow: none;
   outline: none; }
+
+.contact-details {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-start; }
+  .contact-details em {
+    font-size: 36px;
+    color: #01153e;
+    margin-right: 40px; }
+  .contact-details a {
+    font-size: 30px;
+    font-weight: 400;
+    color: #01153e; }
+  .contact-details iframe {
+    height: 185px; }
