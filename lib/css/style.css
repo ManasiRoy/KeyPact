@@ -645,7 +645,7 @@ p {
     left: 0; } }
 @media only screen and (max-width: 767px) {
   .hdr-main {
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.9); }
     .hdr-main .navbar .dropdown,
     .hdr-main .navbar .navbar-toggler {
       margin-bottom: 20px; }
@@ -655,7 +655,7 @@ p {
       width: 100px; }
     .hdr-main a.navbar-brand {
       padding: 20px 0 20px 20px;
-      width: 100px; }
+      width: 150px; }
 
   .main {
     margin-top: 30%; }
@@ -676,4 +676,7 @@ p {
   .contact-details a {
     font-size: 1rem; }
   .contact-details em {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .main {
+    margin-top: 40%; } }
