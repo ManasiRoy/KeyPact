@@ -47,6 +47,67 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .inner-container {
+        .inner-text {
+            h2 {
+                font-size: 30px;
+                margin-bottom: 30px;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .accordion .card .card-header .btn {
+            font-size: 16px;
+            white-space: inherit;
+            line-height: 1.5;
+            padding-right: 40px;
+        }
+    }
+
+    .keypactInnroutr {
+        h2 {
+            font-size: 30px;
+        }
+
+        .keypactInnr {
+            .custom-control {
+                padding-left: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .contact-details {
+        margin-bottom: 20px;
+
+        a {
+            font-size: 18px;
+            align-self: center;
+        }
+
+        em {
+            font-size: 20px;
+            margin-right: 1rem;
+            align-self: center;
+        }
+    }
+
+    .innerclosebtn {
+        font-size: 25px;
+        left: 15px;
+        top: 15px;
+    }
+}
+
 @media only screen and (max-width: 815px) {
     .main {
         margin-top: 20%;
@@ -109,64 +170,7 @@
         display: none;
     }
 
-    .inner-container {
-        .inner-text {
-            h2 {
-                font-size: 30px;
-                margin-bottom: 30px;
 
-                span {
-                    font-size: 20px;
-                }
-            }
-
-            p {
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-        }
-
-        .accordion .card .card-header .btn {
-            font-size: 16px;
-            white-space: inherit;
-            line-height: 1.5;
-            padding-right: 40px;
-        }
-    }
-
-    .keypactInnroutr {
-        h2 {
-            font-size: 30px;
-        }
-
-        .keypactInnr {
-            .custom-control {
-                padding-left: 15px;
-                margin-bottom: 15px;
-            }
-        }
-    }
-
-    .contact-details {
-        margin-bottom: 20px;
-
-        a {
-            font-size: 18px;
-            align-self: center;
-        }
-
-        em {
-            font-size: 20px;
-            margin-right: 1rem;
-            align-self: center;
-        }
-    }
-
-    .innerclosebtn {
-        font-size: 25px;
-        left: 15px;
-        top: 15px;
-    }
 }
 
 @media only screen and (max-width: 568px) {
