@@ -211,15 +211,15 @@ p {
   border: 1px solid $color1;
 }
 
-.custom-control-input:focus ~ .custom-control-label::before {
+.custom-control-input:focus~.custom-control-label::before {
   box-shadow: none;
 }
 
-.custom-control-input:active ~ .custom-control-label::before {
+.custom-control-input:active~.custom-control-label::before {
   background-color: transparent;
 }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
   background-color: $color1;
 }
 
@@ -733,6 +733,7 @@ p {
     }
   }
 }
+
 .bgcolorblue {
   background: $color1;
 
@@ -746,6 +747,7 @@ p {
     }
   }
 }
+
 .copyright {
   width: 100%;
   position: fixed;
@@ -761,24 +763,33 @@ p {
   box-shadow: none;
   outline: none;
 }
+
 .contact-details {
   margin-bottom: 50px;
   display: flex;
   justify-content: flex-start;
+
   em {
     font-size: 36px;
     color: $color1;
     @extend .display-inline-block;
     margin-right: 40px;
   }
+
   a {
     @extend .display-inline-block;
     font-size: 30px;
     font-weight: 400;
     color: $color1;
   }
+
   iframe {
     height: 185px;
   }
 }
+
+.mr20 {
+  margin-right: 20px;
+}
+
 @import "./components/responsive";

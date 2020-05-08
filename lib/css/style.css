@@ -571,6 +571,9 @@ p {
   .contact-details iframe {
     height: 185px; }
 
+.mr20 {
+  margin-right: 20px; }
+
 @media only screen and (max-width: 1024px) {
   .right-form .choose-file span {
     margin: 0 0 10px;
@@ -625,7 +628,10 @@ p {
   .innerclosebtn {
     font-size: 25px;
     left: 15px;
-    top: 15px; } }
+    top: 15px; }
+
+  .mr20 {
+    margin: 0 15px; } }
 @media only screen and (max-width: 815px) {
   .main {
     margin-top: 20%; }
