@@ -1,9 +1,114 @@
 @media only screen and (max-width: 1169px) {}
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    .right-form {
+        .choose-file {
+            span {
+                margin: 0 0 10px;
+                display: block;
+            }
+        }
+    }
+}
 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 991px) {
+    .left-key {
+        h1 {
+            font-size: 30px;
+        }
+    }
 
-@media only screen and (max-width: 768px) {}
+    .form-control {
+        padding: 10px 15px;
+    }
 
-@media only screen and (max-width: 767px) {}
+    .right-form {
+        .add-file-outr {
+            margin-bottom: 20px;
+        }
+
+        .form-bottom {
+            margin-bottom: 20px;
+        }
+    }
+
+    .hdr-main {
+        .mainmenu {
+            width: 50%;
+
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .main {
+        margin-top: 20%;
+    }
+
+    .copyright {
+        position: static;
+        padding: 10px;
+    }
+
+    .social {
+        padding: 5px;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hdr-main {
+        background-color: rgba($color: $white, $alpha: 0.5);
+
+        .navbar {
+
+            .dropdown,
+            .navbar-toggler {
+                margin-bottom: 20px;
+            }
+
+            #dLabel {
+                width: 100px;
+            }
+
+            .dropdown-menu {
+                width: 100px;
+            }
+        }
+
+        a.navbar-brand {
+            padding: 20px 0 20px 20px;
+            width: 100px;
+        }
+    }
+
+    .main {
+        margin-top: 30%;
+    }
+
+    .left-key {
+        margin-bottom: 50px;
+
+        h1 {
+            font-size: 25px;
+        }
+
+        .hdr-secondary {
+            font-size: 16px;
+        }
+    }
+
+    .social {
+        display: none;
+    }
+
+}

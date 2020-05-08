@@ -570,3 +570,61 @@ p {
     color: #01153e; }
   .contact-details iframe {
     height: 185px; }
+
+@media only screen and (max-width: 1024px) {
+  .right-form .choose-file span {
+    margin: 0 0 10px;
+    display: block; } }
+@media only screen and (max-width: 991px) {
+  .left-key h1 {
+    font-size: 30px; }
+
+  .form-control {
+    padding: 10px 15px; }
+
+  .right-form .add-file-outr {
+    margin-bottom: 20px; }
+  .right-form .form-bottom {
+    margin-bottom: 20px; }
+
+  .hdr-main .mainmenu {
+    width: 50%; }
+    .hdr-main .mainmenu ul li a {
+      font-size: 20px; } }
+@media only screen and (max-width: 815px) {
+  .main {
+    margin-top: 20%; }
+
+  .copyright {
+    position: static;
+    padding: 10px; }
+
+  .social {
+    padding: 5px;
+    left: 0; } }
+@media only screen and (max-width: 767px) {
+  .hdr-main {
+    background-color: rgba(255, 255, 255, 0.5); }
+    .hdr-main .navbar .dropdown,
+    .hdr-main .navbar .navbar-toggler {
+      margin-bottom: 20px; }
+    .hdr-main .navbar #dLabel {
+      width: 100px; }
+    .hdr-main .navbar .dropdown-menu {
+      width: 100px; }
+    .hdr-main a.navbar-brand {
+      padding: 20px 0 20px 20px;
+      width: 100px; }
+
+  .main {
+    margin-top: 30%; }
+
+  .left-key {
+    margin-bottom: 50px; }
+    .left-key h1 {
+      font-size: 25px; }
+    .left-key .hdr-secondary {
+      font-size: 16px; }
+
+  .social {
+    display: none; } }
