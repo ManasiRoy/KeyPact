@@ -88,6 +88,11 @@ p {
   font-size: 18px;
   color: #000000;
   margin-bottom: 20px; }
+  .left-key .hdr-secondary a {
+    color: #01153e;
+    font-weight: 500; }
+    .left-key .hdr-secondary a:hover {
+      text-decoration: none; }
 .left-key .button-group {
   margin-left: 6px;
   margin-bottom: 20px; }
