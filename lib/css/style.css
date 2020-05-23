@@ -539,6 +539,15 @@ p {
     .keypactInnroutr .keypactInnr .btn {
       font-size: 14px;
       padding: 6px 15px; }
+    .keypactInnroutr .keypactInnr .linkToYoutube .btn {
+      min-width: auto;
+      border: none;
+      padding: 5px; }
+      .keypactInnroutr .keypactInnr .linkToYoutube .btn:hover {
+        color: #bd2130; }
+    .keypactInnroutr .keypactInnr .linkToYoutube p {
+      margin: 10px 0;
+      font-weight: 500; }
 
 .bgcolorblue {
   background: #01153e; }
