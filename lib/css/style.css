@@ -9,6 +9,25 @@ body,
 html {
   height: 100%; }
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  background: #01153e;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #01153e; }
+
 .display-inline-block, .left-key .download-left .type .custom-control, .left-key .download-left .type span, .flagoutr .flag, .contact-details em, .contact-details a {
   display: inline-block;
   vertical-align: middle; }
@@ -128,7 +147,8 @@ p {
   background-color: rgba(255, 255, 255, 0.5); }
 
 .main {
-  margin-top: 5%; }
+  margin-top: 5%;
+  width: 100%; }
 
 .form-control {
   border-radius: 4px;
@@ -217,6 +237,9 @@ p {
 
 .hdr-main {
   padding: 0; }
+  .hdr-main.fixed {
+    background: rgba(255, 255, 255, 0.9);
+    padding-bottom: 20px; }
   .hdr-main a.navbar-brand {
     padding: 20px 20px 0; }
   .hdr-main .navbar-toggler {
@@ -282,7 +305,7 @@ p {
 
 .inner-container {
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.035);
   padding: 15px;
   position: fixed;
@@ -557,12 +580,6 @@ p {
       border: 1px solid #fff; }
 
 .copyright {
-  width: 100%;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin: auto;
   text-align: center;
   font-size: 14px; }
 
@@ -591,6 +608,12 @@ p {
 .twitter-timeline {
   font-weight: 500; }
 
+#twitter-widget-0 a.u-floatLeft {
+  display: none !important; }
+
+@media only screen and (max-width: 1169px) {
+  .main {
+    margin-top: 0; } }
 @media only screen and (max-width: 1024px) {
   .right-form .choose-file span {
     margin: 0 0 10px;
@@ -651,7 +674,7 @@ p {
     margin: 0 15px; } }
 @media only screen and (max-width: 815px) {
   .main {
-    margin-top: 20%; }
+    margin-top: 5%; }
 
   .copyright {
     position: static;
@@ -674,9 +697,6 @@ p {
       padding: 20px 0 20px 20px;
       width: 150px; }
 
-  .main {
-    margin-top: 30%; }
-
   .left-key {
     margin-bottom: 50px; }
     .left-key h1 {
@@ -693,7 +713,4 @@ p {
   .contact-details a {
     font-size: 1rem; }
   .contact-details em {
-    font-size: 20px; }
-
-  .main {
-    margin-top: 40%; } }
+    font-size: 20px; } }

@@ -15,6 +15,27 @@ html {
   height: 100%;
 }
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @include radius(10px);
+  background: $color1;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $color1;
+}
+
 .display-inline-block {
   display: inline-block;
   vertical-align: middle;
@@ -180,6 +201,7 @@ p {
 
 .main {
   margin-top: 5%;
+  width: 100%;
 }
 
 .form-control {
@@ -299,6 +321,10 @@ p {
 
 .hdr-main {
   padding: 0;
+  &.fixed {
+    background: rgba($color: #fff, $alpha: 0.9);
+    padding-bottom: 20px;
+  }
 
   a.navbar-brand {
     padding: 20px 20px 0;
@@ -387,7 +413,7 @@ p {
 
 .inner-container {
   padding: 40px;
-  background-color: rgba($color: #fff, $alpha: 0.5);
+  background-color: rgba($color: #fff, $alpha: 1);
   box-shadow: 0 0 0 1px rgba($color: #000000, $alpha: 0.035);
   padding: 15px;
   position: fixed;
@@ -775,12 +801,6 @@ p {
 }
 
 .copyright {
-  width: 100%;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin: auto;
   text-align: center;
   font-size: 14px;
 }
@@ -822,4 +842,9 @@ p {
   font-weight: 500;
 }
 
+#twitter-widget-0 {
+  a.u-floatLeft {
+    display: none !important;
+  }
+}
 @import "./components/responsive";

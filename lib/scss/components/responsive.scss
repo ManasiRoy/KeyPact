@@ -1,4 +1,8 @@
-@media only screen and (max-width: 1169px) {}
+@media only screen and (max-width: 1169px) {
+    .main {
+        margin-top: 0;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
     .right-form {
@@ -114,7 +118,7 @@
 
 @media only screen and (max-width: 815px) {
     .main {
-        margin-top: 20%;
+        margin-top: 5%;
     }
 
     .copyright {
@@ -154,10 +158,6 @@
         }
     }
 
-    .main {
-        margin-top: 30%;
-    }
-
     .left-key {
         margin-bottom: 50px;
 
@@ -193,7 +193,4 @@
         }
     }
 
-    .main {
-        margin-top: 40%;
-    }
 }
