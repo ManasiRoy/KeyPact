@@ -242,15 +242,15 @@ p {
   border: 1px solid $color1;
 }
 
-.custom-control-input:focus ~ .custom-control-label::before {
+.custom-control-input:focus~.custom-control-label::before {
   box-shadow: none;
 }
 
-.custom-control-input:active ~ .custom-control-label::before {
+.custom-control-input:active~.custom-control-label::before {
   background-color: transparent;
 }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
   background-color: $color1;
 }
 
@@ -321,6 +321,7 @@ p {
 
 .hdr-main {
   padding: 0;
+
   &.fixed {
     background: rgba($color: #fff, $alpha: 0.9);
     padding-bottom: 20px;
@@ -842,9 +843,9 @@ p {
   font-weight: 500;
 }
 
-#twitter-widget-0 {
-  a.u-floatLeft {
-    display: none !important;
-  }
-}
+// #twitter-widget-0 {
+//   a.u-floatLeft {
+//     display: none !important;
+//   }
+// }
 @import "./components/responsive";

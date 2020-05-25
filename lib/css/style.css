@@ -608,9 +608,6 @@ p {
 .twitter-timeline {
   font-weight: 500; }
 
-#twitter-widget-0 a.u-floatLeft {
-  display: none !important; }
-
 @media only screen and (max-width: 1169px) {
   .main {
     margin-top: 0; } }
