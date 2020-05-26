@@ -136,6 +136,7 @@
     .hdr-main {
         background-color: rgba($color: $white, $alpha: 0.9);
 
+
         .navbar {
 
             .dropdown,
@@ -193,4 +194,13 @@
         }
     }
 
+    .hdr-main {
+        a.navbar-brand {
+            width: 120px;
+        }
+    }
+
+    .main {
+        margin-top: 40%;
+    }
 }
